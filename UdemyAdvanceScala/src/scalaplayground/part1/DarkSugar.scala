@@ -53,5 +53,5 @@ object DarkSugar extends App{
 //  aMutableObject.mutable=42
 //  print(aMutableObject.mutable)
 
-
+println("Hello")
 }
