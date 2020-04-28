@@ -15,4 +15,5 @@ object JVMConProb extends App {
     println(newAmont)
   }
   for(_ <- 1 to 100) runInParallel
+  
 }
