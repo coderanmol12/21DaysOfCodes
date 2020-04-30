@@ -37,7 +37,7 @@ object PartialsFunction extends App{
     case "Bye" => "Bye, See you tomorrow"
     case _ => "Not Understood!!!!"
   }
-  scala.io.Source.stdin.getLines().foreach(line => println("Bot: "+aBotParitalFunction(line)))
+  //scala.io.Source.stdin.getLines().foreach(line => println("Bot: "+aBotParitalFunction(line)))
 
   // Implementing A manual Partial Functions Q2
 
@@ -51,6 +51,14 @@ object PartialsFunction extends App{
     }
   }
 
+
+  var dummy:PartialFunction[Any, Unit]={
+    case value:Int => println("the value provided is int: "+value )
+    case value:String=> println("the value provided is string"+value)
+    case _ => println("Undefined value provided")
+  }
+
+  println(dummy(10))
 
 
 

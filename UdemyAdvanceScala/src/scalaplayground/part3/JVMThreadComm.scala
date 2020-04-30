@@ -8,6 +8,7 @@ object JVMThreadComm extends App{
   // Producer-Consumer problem can be solved using new Thread APIs
   /**
    * Synchonized, Wait, Notify
+   * Coderman12@man
    * Wait: It will release the lock monitor and suspend
    * Notify: Notify the sleeping thread to continue
    * Monitor: The monitor is a data structure that it's internally used by the JVM to keep track of which object is
