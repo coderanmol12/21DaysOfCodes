@@ -1,13 +1,11 @@
 package scalaplayground.part3
 import scala.concurrent.{Await, Future, Promise}
 import scala.util.{Failure, Random, Success, Try}
-import scala.concurrent.duration._
 
 // important for futures
 import scala.concurrent.ExecutionContext.Implicits.global
-/**
- * Created by Daniel.
- */
+
+
 object FuturesPromises extends App {
 
   case class Profile(id: String, name: String) {
