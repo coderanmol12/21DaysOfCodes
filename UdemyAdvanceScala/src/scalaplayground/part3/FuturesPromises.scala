@@ -52,6 +52,7 @@ object FuturesPromises extends App {
 //    })
 
   var friendsWall = mark.map(profile => SocialNetwork.fetchBestFriend(profile))
+
   for{
     mark <- SocialNetwork.fetchProfile("fb.id.1-zuck")
     friend <- SocialNetwork.fetchBestFriend(mark)
