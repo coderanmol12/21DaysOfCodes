@@ -58,11 +58,6 @@ object TypeClassPractise extends App{
 
   // Sampple Example
 
-
-
-
-
-
   implicit class Doctor(clinincName:String){
 
     def printName(implicit isAyurvedic:Boolean): Unit ={
@@ -80,6 +75,41 @@ object TypeClassPractise extends App{
   object ISAYURVEDIC{
     implicit var defaultVae:Boolean= false
   }
+
+
+
+  // Pimp Library practise
+
+  implicit  class IntRicher(x:Int){
+    def isEven: Boolean= x%2==0
+    def isOdd: Boolean = x%2!=0
+  }
+  println(2 isEven)
+  println(2 isOdd)
+
+
+
+  // Type class problem
+
+  trait Serializer[T]{
+    def serialize(value:T):String
+  }
+
+  object Serializer{
+    def apply[T](value:T)(implicit instance: Serializer[T])= instance.serialize(value)
+  }
+
+  implicit class HTMLSerializer[T](value:T){
+    def doIt(implicit serializer: Serializer[T]):String= Serializer[T](value)
+  }
+
+  implicit object HtmlRender extends Serializer[User]{
+    override def serialize(value: User): String = "html render done"
+  }
+
+  println(john doIt)
+
+
 
 
 }

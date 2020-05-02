@@ -24,6 +24,6 @@ object DuckTyping extends App{
     def head: T
     def tail: CBL[T]
   }
-  
+
 
 }

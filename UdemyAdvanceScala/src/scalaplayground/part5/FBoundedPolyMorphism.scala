@@ -17,6 +17,9 @@ object FBoundedPolyMorphism extends App{
 
 // Limitation of F-BOUNDED Polymorphism is its failed after 1 level hirerchy
   // F-Bounded Polymorphism is used to put a restriction on return types of Generic classes.
+  // <: UPPERBOUNDED
+  // >: LOWEROUNDED
+
 
   trait Animal[T <: Animal[T]]{ self: T =>
     def breed:List[Animal[T]]
