@@ -1,7 +1,7 @@
-package part1
+package part3
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
-import part1.ChildActor.Parent.{CreateChild, TellChild}
+import part3.ChildActor.Parent.{CreateChild, TellChild}
 
 object ChildActor extends App{
 
