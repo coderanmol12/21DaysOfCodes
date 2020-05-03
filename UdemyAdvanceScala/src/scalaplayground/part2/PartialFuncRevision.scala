@@ -23,7 +23,7 @@ object PartialFuncRevision extends App{
   var j:Int=> Int= curriedAdder(4)  // Lifting OR ETA-Expension
   var obj1= curriedAdder(10) _
   println(j(20))
-  
+
   def add(x:Int,y:Int)=x+y
  var demo= add(10,_:Int)
   println(demo(20))
