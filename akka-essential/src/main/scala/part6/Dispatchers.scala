@@ -3,6 +3,11 @@ package part6
 import akka.actor.{Actor, ActorLogging, ActorSystem, Props}
 
 import scala.concurrent.{ExecutionContext, Future}
+
+
+/**
+ * Throughput defines the number of msgs needs to be processed per actor before thread jumps to another actor.
+ */
 import scala.util.Random
 
 object Dispatchers extends App{
