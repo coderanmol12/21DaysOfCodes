@@ -19,7 +19,7 @@ object KafkaConsumer {
     while(true) {
       val records = consumer.poll(500);
       for(record <- records.iterator()) {
-        println("Received message: (" + record.key() + ", " + record.value() + ") at offset " + record.offset());
+        println("Received message: (" + record.key() + ", " + record.value() + ") at offset " + record.offset()+" at partition:"+ record.partition()) ;
       }
     }
   }

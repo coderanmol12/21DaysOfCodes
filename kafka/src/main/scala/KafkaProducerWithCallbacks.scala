@@ -15,15 +15,16 @@ object KafkaProducerWithCallbacks extends App {
   props.put(ProducerConfig.ACKS_CONFIG, "all") // can be 1 and 0
 
   val producer = new KafkaProducer[String, String](props)
-  sendAsync("hello from scala to kafka!!!")
+  sendAsync("hello from scala to kafka!!!")   // key is passing, and passing same key is always leads to same partition
 
   def sendAsync(value: String):Unit = {
     val record = new ProducerRecord[String, String](topic, value,"Hii checking new topic")
     producer.send(record, new Callback {
       override def onCompletion(metadata: RecordMetadata, exception: Exception): Unit = {
-        println("in a callback method with offset value : "+ metadata.offset())
+        println("in a callback method with offset value : "+ metadata.offset() +"and partition is :"+ metadata.partition())
       }
     })
   }
-  producer.close();
+  producer.flush()
+  producer.close()
 }
