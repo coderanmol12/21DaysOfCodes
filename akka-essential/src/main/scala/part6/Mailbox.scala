@@ -3,7 +3,6 @@ package part6
 import akka.actor.{Actor, ActorLogging, ActorSystem, Props}
 import akka.dispatch.{PriorityGenerator, UnboundedPriorityMailbox}
 import com.typesafe.config.{Config, ConfigFactory}
-import akka.dispatch._
 
 object Mailbox extends App{
 
