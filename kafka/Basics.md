@@ -22,9 +22,9 @@ Kafka is often used in real-time streaming data architectures to provide real-ti
  -  "org.apache.kafka" % "kafka-clients" % "1.0.0"
  
 #### MAVEN DEPENDENCY 
-   -   <dependency>
-         <groupId>org.apache.kafka</groupId> <artifactId>kafka-clients</artifactId>  <version>2.0.0</version> </dependency>
-                                                                                            
-         
-              
-              
+ ```
+<dependency> 
+      <groupId>org.apache.kafka</groupId>
+      <artifactId>kafka-clients</artifactId>  
+      <version>2.0.0</version> 
+ </dependency>
