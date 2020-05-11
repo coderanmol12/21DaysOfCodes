@@ -3,7 +3,6 @@ import java.util.Properties
 import scala.collection.JavaConversions._
 import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
 
-
 object KafkaConsumer {
   def main(args: Array[String]): Unit = {
     val props = new Properties();
