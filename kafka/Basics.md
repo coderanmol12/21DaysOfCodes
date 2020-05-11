@@ -16,6 +16,11 @@ Kafka is often used in real-time streaming data architectures to provide real-ti
 - kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group -my-first-application    
 - kafka-consumer-groups --bootstrap-server localhost:9092  --group -my-first-application --reset-offsets --to-earliest --execute --topic first_topic
    
+   
+### Kafka Basics Overview
+
+![image info](./screenshots/kafkabasics.png)
+   
 
 
 #### SBT DEPENDENCY :  
