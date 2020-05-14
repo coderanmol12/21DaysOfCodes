@@ -21,7 +21,12 @@ object HighLevel extends App{
     path("hello" / Segment) { charClass =>
       // DIRECTIVES (Building of High Level akka http server)
       complete(StatusCodes.OK, charClass.toString)
-    }
+    } ~
+      pathPrefix("mya") {
+        (path(Segment) & post) { name =>
+          complete(StatusCodes.OK,name)
+        }
+      }
   }
 
   val compactExtractRequestRoute = (path("controlEndpoint") & extractRequest & extractLog) { (request, log) => {
