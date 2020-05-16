@@ -18,14 +18,15 @@
 ```
     
 #### By doing above promethus will scrap metrics from localhost:9095
-#### Clone the code and run the below API
+#### Clone the code and run the below API:
     
 ```
-    curl --location --request GET 'http://localhost:9100/hello' \
+    curl --location --request GET 'http://localhost:9100/push/metrics' \
 --header 'Content-Type: application/json'
     
 ```   
 ####  Hit the Url : localhost:9095 you should be able to see the metrics(search `DATA_INGESTED`) you should be able to see the count.
+         ###### Hit the API multiple times and wait for 1 min atleast.
 
 #### Open Promethus execute Query DATA_INGESTED_total you should see the metrics with count.
 
