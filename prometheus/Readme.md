@@ -1,6 +1,6 @@
 ## Promethus: A Time-Series DB with KEY-Value pairs uses in-memory db.
 
-#### <ins> Intension</ins>: Visualize metrics in Promethus using scala & Kamon(lib)
+#### <ins> Intension</ins>: Visualize metrics in Promethus using scala, akka-http & Kamon(lib)
 
 #### Lib Used: Kamon (https://kamon.io/docs/latest/guides/frameworks/elementary-akka-setup)
 
