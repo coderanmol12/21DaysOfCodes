@@ -34,6 +34,6 @@
 
 
 
-#### For better visualization we use Garafana, for connecting grafana with promethus add data source in Grafana, then you should be able to see the metrics graph there.
+#### For better visualization we use Garafana, for connecting grafana with promethus add data source as promethus in Grafana also give url of promethus, then you should be able to see the metrics graph there.
 #### For More info: Refer Documentation https://kamon.io/docs/latest/guides/frameworks/elementary-akka-setup
     
