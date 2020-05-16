@@ -1,7 +1,8 @@
 import java.util.Collections
 import java.util.Properties
+
 import scala.collection.JavaConversions._
-import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
+import org.apache.kafka.clients.consumer.{ConsumerConfig, ConsumerRecord, KafkaConsumer}
 
 object KafkaConsumer {
   def main(args: Array[String]): Unit = {
