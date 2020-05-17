@@ -4,6 +4,8 @@
 
 #### Lib Used: Kamon (https://kamon.io/docs/latest/guides/frameworks/elementary-akka-setup)
 
+#### Metrics: Read here https://kamon.io/docs/latest/core/metrics
+
 #### Kamon will publish the metrics for scraping (localhost:9095)
 
 #### Make sure Promethus is up and running and change the Promethus.yml file with adding below code at the end
