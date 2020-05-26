@@ -7,7 +7,7 @@ Kafka is often used in real-time streaming data architectures to provide real-ti
 ##### Most frequently used KAFKA-CLI Commands: 
 
 - kafka-server-start.bat config/server.properties
-- zookeeper-server-start.bat config/server.properties
+- zookeeper-server-start.bat config/zookeeper.properties
 - kafka-topics --zookeeper localhost:2181 --topic first_topic --create --replication-factor 1 --partitions 3   //Make first topic
 - kafka-topics --zookeeper localhost:2181 --list    //list topics
 - kafka-console-producer --broker-list localhost:9092 --topic first_topic --producer-property acks=all   //producer cli
